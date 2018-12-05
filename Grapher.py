@@ -1,7 +1,6 @@
 import turtle
 import re
 import uuid
-from enum import Enum
 
 
 class Graph:
@@ -144,10 +143,6 @@ class SimpleSlope(Slope):
         for point in self.plot.points:
             self.plot.graph.turtle.setpos(float(point[0]) * self.plot.graph.scale,
                                           float(point[1] * self.plot.graph.scale))
-
-
-class SlopeType(Enum):
-    SIMPLE_SLOPE = SimpleSlope
 
 
 class Settings:
